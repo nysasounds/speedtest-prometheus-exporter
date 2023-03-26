@@ -1,0 +1,19 @@
+global:
+  scrape_interval: 1h
+
+scrape_configs:
+  - job_name: 'speedtest'
+    static_configs:
+      - targets:
+        - "speedtest:9469"
+    metrics_path: "/probe"
+    params:
+      script: ["speedtest"]
+    scrape_timeout: "1m"
+    relabel_configs:
+      - target_label: script
+        replacement: speedtest
+
+remote_write:
+- url: https://prometheus-server
+  bearer_token: some-super-secret-token
