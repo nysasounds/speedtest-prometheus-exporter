@@ -1,4 +1,4 @@
-# speedtest-cli and Prometheus exporter
+# speedtest-cli and prometheus exporter
 
 Measure internet bandwidth using speedtest.net, and expose stats for collecting via prometheus.
 
