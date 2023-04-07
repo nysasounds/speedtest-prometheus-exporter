@@ -13,12 +13,12 @@ speedtest --secure --json | jq -r '  . |
     "# TYPE speedtest_latency_seconds gauge",
     "speedtest_latency_seconds \(.ping)",
 
-    "# HELP speedtest_download Download Speed in Bits/Second",
-    "# TYPE speedtest_download gauge",
+    "# HELP speedtest_download_bps Download Speed in Bits/Second",
+    "# TYPE speedtest_download_bps gauge",
     "speedtest_download_bps \(.download)",
 
-    "# HELP speedtest_upload Upload Speed in Bits/Second",
-    "# TYPE speedtest_upload gauge",
+    "# HELP speedtest_upload_bps Upload Speed in Bits/Second",
+    "# TYPE speedtest_upload_bps gauge",
     "speedtest_upload_bps \(.upload)",
 
     "# HELP speedtest_server_info Server Info",
