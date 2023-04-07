@@ -55,7 +55,7 @@ The exported output looks like this:
 
 Run the container:
 ```
-$ docker run -rm -p 9469:9469 nysasounds/speedtest-prometheus-exporter:0.0.1
+$ docker run --rm -p 9469:9469 nysasounds/speedtest-prometheus-exporter:0.0.1
 ```
 
 Test the exporter.
